@@ -13,6 +13,7 @@
 		4E57C0D32491601C002BA6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E57C0D22491601C002BA6ED /* Assets.xcassets */; };
 		4E57C0D62491601C002BA6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E57C0D42491601C002BA6ED /* LaunchScreen.storyboard */; };
 		4E57C0E12491601C002BA6ED /* BitcoinPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E57C0E02491601C002BA6ED /* BitcoinPriceTests.swift */; };
+		4EB9D5452499519E00788E77 /* BitcoinPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9D5442499519D00788E77 /* BitcoinPriceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4E57C0DC2491601C002BA6ED /* BitcoinPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E57C0E02491601C002BA6ED /* BitcoinPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceTests.swift; sourceTree = "<group>"; };
 		4E57C0E22491601C002BA6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB9D5442499519D00788E77 /* BitcoinPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				4E57C0D22491601C002BA6ED /* Assets.xcassets */,
 				4E57C0D42491601C002BA6ED /* LaunchScreen.storyboard */,
 				4E57C0D72491601C002BA6ED /* Info.plist */,
+				4EB9D5442499519D00788E77 /* BitcoinPriceCell.swift */,
 			);
 			path = BitcoinPrice;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB9D5452499519E00788E77 /* BitcoinPriceCell.swift in Sources */,
 				4E57C0CE24916019002BA6ED /* ViewController.swift in Sources */,
 				4E57C0CC24916019002BA6ED /* AppDelegate.swift in Sources */,
 			);
