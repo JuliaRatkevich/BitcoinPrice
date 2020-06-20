@@ -13,8 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
         setupTable()
     }
     
@@ -38,9 +37,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .green
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BitcoinPriceCell",
+                                                 for: indexPath) as! BitcoinPriceCell
+        
+        cell.dateLabel.text = "Date"
+        cell.priceLabel.text = "Price"
+        cell.differenceLabel.text = "Diff"
         return cell
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,15 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "section \(section + 1)"
-//        switch section {
-//        case 0:
-//            return "section 1"
-//        case 1:
-//            return "section 2"
-//        case 2:
-//            return "section 3"
-//        default:
-//            return nil
-//        }
+
     }
+
 }
